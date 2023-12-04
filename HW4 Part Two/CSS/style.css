@@ -1,0 +1,137 @@
+/* File: ~/style.css
+  Homework 4: Creating an Interactive Dynamic Table
+  Modib Qadir, UMass Lowell Computer Science, Modib_qadir@student.uml.edu
+  Copyright (c) 2023 by Modib Qadir. All rights reserved. May be freely copied or
+  excerpted for educational purposes with credit to the author.
+  Updated by MQ on November 28th, 2023.
+ */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0099ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(0, 153, 255, 0.5);
+}
+
+#deleteTabs{
+    background-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#deleteTabs:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+#output {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.table-container {
+    overflow: auto;
+    max-height: 400px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+th:first-child {
+    left: 0;
+    z-index: 2;
+}
+
+label.error {
+    color: red;
+    font-weight: bold;
+}
+
+div.ui-slider {
+    margin-bottom: 20px;
+}
+
+/* Increasing specificity for the slider track and handle with faded effect */
+.ui-widget-content.ui-slider-horizontal {
+    background: linear-gradient(to right, red, rgba(255, 0, 0, 0.5) 50%, rgba(0, 0, 255, 0.5) 50%, blue) !important; /* Adding fade effect to red and blue */
+}
+
+.ui-slider.ui-widget-content .ui-slider-handle {
+    background: black !important;
+    border-color: black !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -0.5em;
+}
+
+.scrollable-tab-content {
+    max-height: 400px; /* Set the maximum height as needed */
+    overflow: auto; /* Enable vertical scroll when content exceeds max height */
+}
+
