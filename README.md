@@ -1,5 +1,5 @@
 # GUI_HW4
 
-Part one Link:
+Part one Website Link:
 
-Part two Link:
+Part two Website Link:
